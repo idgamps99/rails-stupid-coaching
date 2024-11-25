@@ -1,0 +1,19 @@
+<!-- User Question -->
+<div class="p-3 mb-3">
+  <blockquote class="blockquote-border">
+    <p><%= @question %></p>
+    <footer class="blockquote-footer"><i>You</i></footer>
+  </blockquote>
+</div>
+
+<!-- Coach Response -->
+<div class="p-3 mb-3" class="coach-response-background">
+  <blockquote class="blockquote-border background-yellow">
+    <p><%= @response %></p>
+    <footer class="blockquote-footer"><i>Your coach</i></footer>
+  </blockquote>
+</div>
+
+<!-- Ask Another Question Link -->
+<%# <a href="/ask" class="text-primary">Ask a new question</a> %>
+<%=  link_to "Ask a new question", "/ask" %>
